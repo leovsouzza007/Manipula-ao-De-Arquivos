@@ -8,10 +8,11 @@ $arquivo = "arquivo.txt";
 
 $frases = $frase1 . "\n" . $frase2 . "\n" . $frase3 . "\n";
 
-if (file_put_contents($arquivo, $frases) == false) {
-    echo "Frases salvas com sucesso!!";
+if (file_put_contents($arquivo, $frases) !== false) {
+    echo "Frases salvas com sucesso!!<br>";
     echo '<a href="ler.php">Clique aqui para ver o conteúdo</a>';
 } else {
     echo "Erro ao criar o arquivo";
 }
+
 ?>

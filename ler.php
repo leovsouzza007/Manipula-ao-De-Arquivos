@@ -2,8 +2,8 @@
 
 $arquivo = "arquivo.txt";
 
-if (file_exists($arquvio)) {
-    $conteudo = file_get_contents($arquvio);
+if (file_exists($arquivo)) {
+    $conteudo = file_get_contents($arquivo);
     echo $conteudo;
 } else {
     echo "<h2>O arquivo não existe. Grave as frases primeiro.</h2>";
